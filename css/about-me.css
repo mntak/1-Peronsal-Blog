@@ -1,5 +1,7 @@
 nav {
     padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
   }
   
   nav ul {
@@ -23,4 +25,14 @@ nav {
   nav a:hover,
   nav li.active a {
     color: red;
+  }
+
+  .hero {
+      background-color:lightblue;
+      text-align: center;
+      padding: 30px 20px;
+      margin: auto;
+  }
+  .col-lg-6 {
+      padding: 50px 20px;
   }
