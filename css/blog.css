@@ -186,3 +186,27 @@ footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
 }
+
+@media (max-width: 900px){
+  .container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px 600px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd sd main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+  }
+    #nestedgrid{
+      display:flexbox;
+      justify-items: center;
+      text-align: center;
+      grid-template-rows: 33% 33% 33%;
+      grid-template-columns: 100%; 
+      /*border: 3px solid gray;*/
+    }
+
+}
