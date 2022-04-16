@@ -1,0 +1,148 @@
+:root {
+    --branding-color:white;
+    --heading-font-family: "Playfair Display", serif;
+    --default-font-family: "Poppins", sans-serif;
+    --secondary-color: black;
+  }
+
+
+
+.container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px 600px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd sd sd sd sd sd sd sd"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      border: 2px solid yellow;
+
+  }
+  .box{
+  /* width: 250px;
+    height: 150px; */
+    border: 1px solid red;
+   /* background: #F8FA9D;*/
+    }
+
+
+
+  .header{
+    /* row start/column start/ row end/ column end */
+    grid-area:hd;
+    background-image: url(/images/doraku.png);
+    background-size: 100%;
+  }
+
+  .footer{
+    grid-area: ft;  
+  }
+  .sidebar{
+    grid-area: sd;
+  }
+  .content{
+    grid-area: main;
+  }
+
+  .header h5{
+      color: darkgray;
+      text-align: center;
+  }
+
+  #nestedgrid{
+      display:grid;
+      justify-items: center;
+      text-align: center;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 100%; 
+      border: 3px solid blue;
+  }
+
+  .photoBox{
+      margin: auto;
+      padding: 10px auto;
+      width: 300px;
+      height: 150px;
+      background: yellow;
+  }
+
+  nav {
+    padding: 20px 0;
+ 
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline;
+    list-style: none;
+    margin-left: 10px;
+    line-height: 40px;
+
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    transition: all 100ms ease-in-out;
+  }
+  
+  nav a:hover,
+  nav li.active a {
+    color: red;
+  }
+
+  .btn-branding {
+    background: var(--branding-color);
+    border-radius: 2px;
+    color: black;
+    font-size: 18px;
+    line-height: 1px;
+    padding: 15px 30px;
+    align-self: end;
+  }
+  
+  .btn-branding-outline {
+    color: var(--branding-color);
+    border: 1px solid var(--branding-color);
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+    border-radius: 4px;
+  }
+
+  .photoBox {
+      display:flex;
+      align-items:center;
+      
+ 
+  }
+
+  #about-me{
+      background-image: url(/images/me4.JPG);
+      background-size: cover;
+      justify-content: center;
+
+      
+  }
+
+  #follow-me{
+      background-image: url(/images/amberjack.jpeg);
+      background-size: cover;
+      justify-content: center;
+     
+
+  }
+
+  #recent-posts{
+      background-image: url(/images/matsuri.png);
+      background-size: cover;
+      justify-content: center;
+  }
