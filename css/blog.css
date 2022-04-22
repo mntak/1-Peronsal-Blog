@@ -196,8 +196,13 @@ footer .social-links a:hover {
       grid-template-columns: 300px 300px 300px;
       grid-template-rows: 300px 300px 600px;
       grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
+      /*"hd hd hd hd hd hd hd hd"
       "sd sd main main main main main main"
+      "ft ft ft ft ft ft ft ft";*/
+      "hd hd hd hd hd hd hd hd"
+      "sd sd sd sd sd sd sd sd"
+      "sd sd sd sd sd sd sd sd"
+      "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";
   }
     #nestedgrid{
