@@ -1,8 +1,8 @@
 :root {
-    --branding-color:white;
+    --branding-color:rgb(178, 176, 176);
     --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", sans-serif;
-    --secondary-color: aqua;
+    --secondary-color: lightblue;
   }
 
 
@@ -95,7 +95,7 @@
   
   nav a {
     text-decoration: none;
-    color: white;
+    color: gray;
     transition: all 100ms ease-in-out;
   }
   
@@ -156,6 +156,7 @@ footer .contact-box {
   background: var(--secondary-color);
   padding: 30px 120px;
   border-radius: 10px;
+  
 }
 
 footer .contact-box p {
