@@ -26,7 +26,7 @@ h1 {
     /* Step 2: setup rows amd columns */
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 500px 300px 600px;
+    grid-template-rows: 300px 300px 300px;
     grid-template-areas:
         "hd hd hd hd hd hd hd hd"
         "sd sd sd sd sd sd sd sd"

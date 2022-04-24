@@ -51,7 +51,7 @@ h2 {
     display: grid;
     justify-items: center;
     text-align: center;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 100%;
     border: 3px solid gray;
 }
