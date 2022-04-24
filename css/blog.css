@@ -1,126 +1,119 @@
+@import "footer.css";
+
 :root {
-    --branding-color:rgb(250, 244, 244);
-   /* --heading-font-family: "Playfair Display", serif;*/
+    --branding-color: rgb(250, 244, 244);
+    /* --heading-font-family: "Playfair Display", serif;*/
     /*--default-font-family: "Poppins", sans-serif;*/
     --secondary-color: lightblue;
-  }
+}
 
-
-  h1{
+h1 {
     text-align: center;
     font-size: 68px;
     margin: auto;
-    color:rgb(17, 17, 19);
-     
+    color: rgb(17, 17, 19);
 }
 
-
-.nav{
-  font-size: 38px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+.nav {
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-.container{
+.container {
     /* Step 1: Set display to grid */
-      display:grid;
-   /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 500px 300px 600px;
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "sd sd sd sd sd sd sd sd"
-      "main main main main main main main main"
-      "ft ft ft ft ft ft ft ft";
-      /*border: 2px solid yellow;*/
-
-  }
-  .box{
-  /* width: 250px;
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 500px 300px 600px;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd sd sd sd sd sd sd sd"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    /*border: 2px solid yellow;*/
+}
+.box {
+    /* width: 250px;
     height: 150px; */
     /*border: 1px solid red;*/
-   /* background: #F8FA9D;*/
-   padding: 20px 20px;
-    }
+    /* background: #F8FA9D;*/
+    padding: 20px 20px;
+}
 
-
-
-  .header{
+.header {
     /* row start/column start/ row end/ column end */
-    grid-area:hd;
+    grid-area: hd;
     background-image: url(/images/honolulu.jpg);
     background-size: 100%;
-  }
-  
+}
 
-  .footer{
-    grid-area: ft;  
+.footer {
+    grid-area: ft;
     margin: 60px 0;
-  }
-  .sidebar{
+}
+.sidebar {
     grid-area: sd;
     margin-top: 50px;
-  }
-  .content{
+}
+.content {
     grid-area: main;
-  }
+}
 
-  .header h5{
-      color: darkgray;
-      text-align: center;
-  }
+.header h5 {
+    color: darkgray;
+    text-align: center;
+}
 
-  #nestedgrid{
-      display:grid;
-      justify-items: center;
-      text-align: center;
-      grid-template-columns: 33% 33% 33%;
-      grid-template-rows: 100%; 
-      border: 3px solid gray;
-  }
+#nestedgrid {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    border: 3px solid gray;
+}
 
-  .photoBox{
-      margin: auto;
-      padding: 10px auto;
-      width: 300px;
-      height: 150px;
-      background: yellow;
-  }
+.photoBox {
+    margin: auto;
+    padding: 10px auto;
+    width: 300px;
+    height: 150px;
+    background: yellow;
+}
 
-  
-  nav {
+nav {
     padding: 20px 20px;
     font-size: 24px;
     font-weight: bold;
     background-color: lightblue;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     padding: 0;
     margin: 0;
-  }
-  
-  nav li {
+}
+
+nav li {
     display: inline;
     list-style: none;
     margin-left: 10px;
     line-height: 40px;
+}
 
-  }
-  
-  nav a {
+nav a {
     text-decoration: none;
     color: white;
     transition: all 100ms ease-in-out;
-  }
-  
-  nav a:hover,
-  nav li.active a {
-    color: red;
-  }
+}
 
-  .btn {
+nav a:hover,
+nav li.active a {
+    color: red;
+}
+
+.btn {
     background: var(--branding-color);
     border-radius: 2px;
     color: black;
@@ -128,116 +121,64 @@
     line-height: 1px;
     padding: 15px 30px;
     align-self: end;
-  }
-  
-  .btn-branding-outline {
+}
+
+.btn-branding-outline {
     color: var(--branding-color);
     border: 1px solid var(--branding-color);
     font-size: 18px;
     line-height: 27px;
     padding: 15px 30px;
     border-radius: 4px;
-  }
-
-  .photoBox {
-      display:flex;
-      align-items:center;
-      
- 
-  }
-
-  #about-me{
-      background-image: url(/images/me4.JPG);
-      background-size: cover;
-      justify-content: center;
-
-      
-  }
-
-  #follow-me{
-      background-image: url(/images/amberjack.jpeg);
-      background-size: cover;
-      justify-content: center;
-     
-
-  }
-
-  #recent-posts{
-      background-image: url(/images/matsuri.png);
-      background-size: cover;
-      justify-content: center;
-  }
-
-  footer {
-    text-align: center;
-  }
-footer .contact-box {
-  background: var(--secondary-color);
-  padding: 30px 120px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 36px;
-}
-footer .contact {
-  padding: 30px 60px;
-}
-footer .contact-box p {
-  margin: 10;
 }
 
-footer .email-link {
-  text-decoration: none;
-  color: black;
-  font-size: 24px;
+.photoBox {
+    display: flex;
+    align-items: center;
 }
 
-footer .email-link:hover {
-  color: var(--branding-color);
+#about-me {
+    background-image: url(/images/me4.JPG);
+    background-size: cover;
+    justify-content: center;
 }
 
-footer .social-links a {
-  margin: 0 20px;
-  color: var(--branding-color);
-  background-color: var(--secondary-color);
-  padding: 10px 14px;
-  font-size: 18px;
-  border-radius: 50%;
-  transition: all 100ms ease-in-out;
+#follow-me {
+    background-image: url(/images/amberjack.jpeg);
+    background-size: cover;
+    justify-content: center;
 }
 
-footer .social-links a:hover {
-  color: white;
-  background: var(--branding-color);
-}
-footer .linked-in a{
-  background-image: url(/images/linked-in.png);
+#recent-posts {
+    background-image: url(/images/matsuri.png);
+    background-size: cover;
+    justify-content: center;
 }
 
-@media (max-width: 900px){
-  .container{
-    /* Step 1: Set display to grid */
-      display:grid;
-   /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 300px 300px 600px;
-      grid-template-areas: 
+@media (max-width: 900px) {
+    .container {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 300px 600px;
+        grid-template-areas: 
       /*"hd hd hd hd hd hd hd hd"
       "sd sd main main main main main main"
       "ft ft ft ft ft ft ft ft";*/
-      "hd hd hd hd hd hd hd hd"
-      "sd sd sd sd sd sd sd sd"
-      "sd sd sd sd sd sd sd sd"
-      "main main main main main main main main"
-      "ft ft ft ft ft ft ft ft";
-  }
-    #nestedgrid{
-      display:flexbox;
-      justify-items: center;
-      text-align: center;
-      grid-template-rows: 33% 33% 33%;
-      grid-template-columns: 100%; 
-      /*border: 3px solid gray;*/
+            "hd hd hd hd hd hd hd hd"
+            "sd sd sd sd sd sd sd sd"
+            "sd sd sd sd sd sd sd sd"
+            "main main main main main main main main"
+            "ft ft ft ft ft ft ft ft";
     }
-
+    #nestedgrid {
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 100%;
+        /*border: 3px solid gray;*/
+    }
 }
