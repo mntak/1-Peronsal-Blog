@@ -36,7 +36,49 @@ footer .social-links a {
 footer .social-links a:hover {
     color: white;
     background: var(--branding-color);
+    padding: 10px 10px;
 }
 footer .linked-in a {
     background-image: url(/images/linked-in.png);
+}
+
+footer .open-source {
+    font-size: 12px;
+    padding: 10px;
+    
+}
+
+@media (max-width: 900px) {
+    
+ 
+  footer .contact-box {
+    padding: 10px 10px;
+    text-align: center;
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  footer .social-links {
+    text-align: center;
+    margin: auto;
+    padding: 1px 1px;
+    font-size: 8px;
+  }
+
+  footer .contact {
+    font-size: 16px;
+    background-size: 50%;
+  }
+
+  footer .email-link a{
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 20px;
+  }
+
+  footer .open-source {
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+      }
 }

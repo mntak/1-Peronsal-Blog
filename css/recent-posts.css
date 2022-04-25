@@ -22,7 +22,7 @@ h1 {
 .content {
     padding: 20px 20px;
     line-height: 28px;
-    margin: 30px;
+    margin: 30px 60px 120px 60px;
 }
 
 .p {
@@ -30,4 +30,24 @@ h1 {
 }
 img {
     padding: 20px 20px;
+}
+
+@media (max-width:900px){
+  h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.nav{
+  font-size: 16px;
+  text-align: center;
+  
+}
+
+container .header{
+  /* row start/column start/ row end/ column end */
+  grid-area: hd;
+  /*background-image: url(/images/honolulu.jpg);*/
+  text-align: center;
+}
 }
