@@ -22,13 +22,13 @@ h1 {
     /* Step 2: setup rows amd columns */
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 500px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
     grid-template-areas:
         "hd hd hd hd hd hd hd hd"
         "sd sd sd sd sd sd sd sd"
         "main main main main main main main main"
         "ft ft ft ft ft ft ft ft";
-    /*border: 2px solid yellow;*/
+   border: 2px solid yellow;
 }
 .box {
     /* width: 250px;
@@ -125,31 +125,35 @@ h1 {
 @media(max-width: 900px) {
   .nav{
     font-size: 16px;
-    text-align: left;
-    width: 90%;
+    text-align: center;
+    
   }
   
   container .header{
     /* row start/column start/ row end/ column end */
     grid-area: hd;
-    background-image: url(/images/honolulu.jpg);
-    background-size: 5%;
-    width: 50%;
+    /*background-image: url(/images/honolulu.jpg);*/
+    text-align: center;
   }
 
   h1 {
     font-size: 36px;
-    text-align: left;
+    text-align: center;
   }
 
-  .box {
+ /* .box {
+    display: flex;
     padding: 10px 10px;
-  }
+
+  }*/
   
+ 
   footer .contact-box {
     padding: 10px 10px;
     text-align: center;
-    /*width: 90%;*/
+    width: 90%;
+    position: fixed;
+    bottom: 0;
   }
 
   footer .social-links {
@@ -181,7 +185,8 @@ h1 {
 
   footer .open-source {
     font-size: 12px;
-  }
+    padding: 10px 10px 10px 10px;
+      }
 
 
 
@@ -197,27 +202,34 @@ h1 {
     .container {
         /* Step 1: Set display to grid */
         display: grid;
-        padding: 10px 10px;
+        margin: auto;
+        padding: 10px 10px 10px 10px;
+        border: 2px red;
         /* Step 2: setup rows amd columns */
         /* grid-template-columns: repeat(3, 1fr); */
-        grid-template-columns: 500px;
-        grid-template-rows: 300px 300px 300px;
+        grid-auto-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        
         grid-template-areas: 
       /*"hd hd hd hd hd hd hd hd"
       "sd sd main main main main main main"
       "ft ft ft ft ft ft ft ft";*/
-            "hd hd hd hd hd hd hd hd"
-            "sd sd sd sd sd sd sd sd"
-            /*"sd sd sd sd sd sd sd sd"*/
-            "main main main main main main main main"
-            "ft ft ft ft ft ft ft ft";
+            "hd hd"
+            "sd sd"
+            "main main"
+            "ft ft";
     }
     #nestedgrid {
         display: flex;
+        font-size: 10px;
         justify-items: center;
         text-align: center;
-        grid-template-rows: 33% 33% 33%;
-        grid-template-columns: 100%;
+        grid-auto-columns: repeat (3, 1fr);
+        grid-template-rows: 100%;
         /*border: 3px solid gray;*/
+    }
+
+    .btn {
+      font-size: 10px;
     }
 }
