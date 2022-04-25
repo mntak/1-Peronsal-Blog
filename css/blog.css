@@ -122,21 +122,27 @@ h1 {
     justify-content: center;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
+  body{
+    width: 0%;
+    color: red;
+    font-size: 12pt;
+  }
     .container {
         /* Step 1: Set display to grid */
         display: grid;
+       
         /* Step 2: setup rows amd columns */
         /* grid-template-columns: repeat(3, 1fr); */
         grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 300px 300px 600px;
+        grid-template-rows: 300px 300px 300px;
         grid-template-areas: 
       /*"hd hd hd hd hd hd hd hd"
       "sd sd main main main main main main"
       "ft ft ft ft ft ft ft ft";*/
             "hd hd hd hd hd hd hd hd"
             "sd sd sd sd sd sd sd sd"
-            "sd sd sd sd sd sd sd sd"
+            /*"sd sd sd sd sd sd sd sd"*/
             "main main main main main main main main"
             "ft ft ft ft ft ft ft ft";
     }
