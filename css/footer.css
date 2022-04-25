@@ -13,13 +13,13 @@ footer .contact-box p {
     margin: 0;
 }
 
-footer .email-link {
+footer .email {
     text-decoration: none;
     color: black;
     font-size: 24px;
 }
 
-footer .email-link:hover {
+footer .email:hover {
     color: var(--branding-color);
 }
 
