@@ -33,6 +33,8 @@ h2 {
 
 .avatar {
     border-radius: 80px;
+    display: flex;
+    align-items: flex-start;
 }
 h5 {
     font-size: 36px;

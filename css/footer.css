@@ -81,4 +81,8 @@ footer .open-source {
     font-size: 12px;
     padding: 10px 10px 10px 10px;
       }
+    
+    footer .email {
+      font-size: 10px;
+    }
 }
