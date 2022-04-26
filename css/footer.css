@@ -38,9 +38,9 @@ footer .social-links a:hover {
     background: var(--branding-color);
     padding: 10px 10px;
 }
-footer .linked-in a {
-    background-image: url(/images/linked-in.png);
-}
+/*footer .linked-in a {
+    background-image: url(/images/linked-in.png);*/
+
 
 footer .open-source {
     font-size: 12px;
@@ -48,14 +48,17 @@ footer .open-source {
     
 }
 
-@media (max-width: 900px) {
+@media (min-width: 340px) and (max-width: 600px) {
     
  
   footer .contact-box {
     padding: 10px 10px;
     text-align: center;
-    width: 90%;
-    position: fixed;
+    position: absolute;
+    /*display: flex;*/
+   /* flex-direction: column;*/
+    width: 100%;
+    /*position: fixed;*/
     bottom: 0;
   }
 

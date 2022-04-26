@@ -151,9 +151,10 @@ h1 {
         display: grid;
           margin: auto;
         padding: 10px 10px 10px 10px;
+        flex-direction: column;
                /* Step 2: setup rows amd columns */
         /* grid-template-columns: repeat(3, 1fr); */
-       grid-template-columns: repeat(auto-fit, 450px);
+      /* grid-template-columns: repeat(auto-fit, 450px);*/
        grid-gap: 10px;
        /* grid-auto-columns: minmax(10px, auto);*/
         grid-template-rows: 300px 300px 300px 300px 300px;
@@ -169,6 +170,7 @@ h1 {
     }
     #nestedgrid {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         font-size: 10px;
         justify-items: center;
