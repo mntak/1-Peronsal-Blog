@@ -123,7 +123,7 @@ h1 {
     justify-content: center;
 }
 
-@media (min-width: 340px) and (max-width: 600px) {
+@media (min-width: 340px) and (max-width: 1000px) {
   .nav{
     font-size: 16px;
     text-align: center;
@@ -148,8 +148,8 @@ h1 {
 
   .container {
         /* Step 1: Set display to grid */
-        display: grid;
-          margin: auto;
+        display: flex;
+        margin: auto;
         padding: 10px 10px 10px 10px;
         flex-direction: column;
                /* Step 2: setup rows amd columns */
@@ -170,20 +170,20 @@ h1 {
     }
     #nestedgrid {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        /*flex-direction: column;
+        flex-wrap: wrap;*/
         font-size: 10px;
         justify-items: center;
         text-align: center;
-        grid-template-columns: repeat(auto-fit, 450px);
-        grid-template-rows: 100%;
+        grid-template-columns: repeat(auto-fit, 100px);
+        grid-template-rows: 33% 33% 33%;
         /*border: 3px solid gray;*/
     }
 
     .content{
-       /* display: flex;*/
+        display: flex;
         /*flex-wrap: wrap;*/
-        padding: 250px;
+        /*padding: 250px;*/
     }
     .btn {
       font-size: 10px;
